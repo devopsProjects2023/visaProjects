@@ -1,7 +1,6 @@
 #!/bin/python
 
-<<Guide
-
+"""
 "Below is Python Scripting
 
 Invoke a function and use it as needed
@@ -9,9 +8,8 @@ Invoke a function and use it as needed
 You require Sudo access to run Script
 
 Run this script only in Linux Server"
-
-Guide
+"""
 #Shell Script Command
-echo "Hello World"
+#echo "Hello World"
 #Python script command
-python("Hello Wordl")
+print("Hello World")
