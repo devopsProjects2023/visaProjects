@@ -41,6 +41,8 @@ echo "ssh Key successfully generated"
 fi
 
 sshKey=`cat ~/.ssh/id_rsa.pub`
+#just to checl if it captures the expected file
+cat ~/.ssh/id_rsa.pubKey
 
 if [ $? -eq 0 ]
 
@@ -48,7 +50,7 @@ then
 
 echo "Copying the key to Github Account"
 
-curl -X POST -H "Content-type: application/json" -d "{\"title\": \"SSHKEY\",\"key\": \"$sshKey\"}"
+curl -X POST -H "Content-type: application/json" -d "{\"title\": \"SSHKEY\",\"key\": \"${sshKey}\"}"
 
 if [$? -eq 0 ]
 
