@@ -54,7 +54,7 @@ echo "Copying the key to Github Account"
 
 curl -X POST -H "Content-type: application/json" -d "{\"title\": \"SSHKEY\",\"key\": \"${sshKey}\"}" "https://api.github.com/user/keys?access_token=$token"
 
-if [$? -eq 0 ]
+if [ $? -eq 0 ]
 
 then
 
