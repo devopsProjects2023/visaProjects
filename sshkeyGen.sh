@@ -1,6 +1,4 @@
-#!/bin/bash
-
-<<Guide
+de
 
 "Below is Shell Scripting for crontabs
 
@@ -41,8 +39,10 @@ echo "ssh Key successfully generated"
 fi
 
 sshKey=`cat ~/.ssh/id_rsa.pub`
-#just to checl if it captures the expected file
-cat ~/.ssh/id_rsa.pubKey
+
+#just to check if it got the right value for sshKey
+
+cat ~/.ssh/id_rsa.pub
 
 if [ $? -eq 0 ]
 
